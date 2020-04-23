@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=IDLE3
+Comment=This is Python3 IDLE3 
+Exec=idle
+Icon=/usr/lib64/python3.8/idlelib/Icons/idle_48.png
+
