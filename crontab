@@ -11,3 +11,8 @@
 
 # Clean up trash on first week of Sunday at 5pm every month of the year.
 0 5 * * 1 rm -r /usr/share/Trash/*
+
+# Change theme to dark at night
+0 18-23 1 * * gsettings set org.gnome.desktop.interface gtk-theme \'Adwaita-dark\'
+# Change theme to light in day
+0 7-18 1 * *  gsettings set org.gnome.desktop.interface gtk-theme \'Adwaita\'
