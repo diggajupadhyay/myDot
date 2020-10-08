@@ -1,0 +1,10 @@
+# Use sudo to get your device permission
+
+# use mem mode to go suspend normally. Use dry run when required
+# Dry run before fucking up the system
+rtcwake --mode mem --seconds 30 --dry-run 
+
+# Actual command to execute for 60 seconds
+sudo rtcwake --mode mem --seconds 60 
+
+# Dry run 
