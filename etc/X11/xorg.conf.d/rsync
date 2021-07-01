@@ -1,0 +1,10 @@
+Sync Home folders like
+
+$HOME/Documents
+$HOME/Downloads
+$HOME/Pictures
+$HOME/Music
+$HOME/Videso
+$HOME/.config
+
+rsync -azP 

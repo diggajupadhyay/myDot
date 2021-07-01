@@ -16,3 +16,7 @@
 0 18-23 1 * * gsettings set org.gnome.desktop.interface gtk-theme \'Adwaita-dark\'
 # Change theme to light in day
 0 7-18 1 * *  gsettings set org.gnome.desktop.interface gtk-theme \'Adwaita\'
+
+
+# backup home folders
+* * * * rsync -azP $HOME/Documents digup@159.89.199.82:/root/
