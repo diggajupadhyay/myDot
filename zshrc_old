@@ -1,0 +1,19 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/digup/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+
+source $ZSH/oh-my-zsh.sh
+
+export PATH=$PATH:/usr/local/go/bin
+
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias uptime="uptime -p | sed 's/up //'"
+alias created="sudo tune2fs -l /dev/sda2 | grep created"
+alias yt-music="youtube-dl --no-playlist --audio-format mp3 --extract-audio" 
+alias youtube-video="youtube-dl -f '(bestvideo/best)[protocol^=http]'"
+alias upgrade_sys="sudo dnf upgrade -y && flatpak upgrade -y"
+alias docker="podman"
